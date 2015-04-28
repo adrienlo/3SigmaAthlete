@@ -430,7 +430,14 @@
 
 		$('#foo-table').dynatable({
 			dataset: {
-				records: jsondata
+				records: jsondata,
+				perPageDefault: 25
+			},
+			features: {
+				// paginate: false,
+				// search: false,
+				// recordCount: false,
+				// perPageSelect: false
 			}
 	    });
 	});
